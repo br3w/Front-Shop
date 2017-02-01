@@ -1,0 +1,627 @@
+
+
+// --------------------------------------------------------
+//                    FORM INPUTS
+// --------------------------------------------------------
+
+.premed-form{
+
+  fieldset{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: solid 1px $color-gray1;
+    padding:.3rem 0;
+    border-radius: .3rem;
+  }
+
+  :hover, :active, :link, :active, :visited, :focus, :before, :after{
+    outline: none!important;
+  }
+
+  //--------------------------------------------------------------------------
+  //                           INPTU[RANGE]
+  //-------------------------------------------------------------------------
+
+  input[type=range] {
+      /*removes default webkit styles*/
+      -webkit-appearance: none;
+
+      /*fix for FF unable to apply focus style bug */
+      border: 1px solid white;
+
+      /*required for proper track sizing in FF*/
+      width: 300px;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+      width: 300px;
+      height: 5px;
+      background: #ddd;
+      border: none;
+      border-radius: 3px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background: $color-green;
+      margin-top: -.55rem;
+  }
+  input[type=range]:focus {
+      outline: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #ccc;
+  }
+
+  input[type=range]::-moz-range-track {
+      width: 300px;
+      height: 5px;
+      background: #ddd;
+      border: none;
+      border-radius: 3px;
+  }
+  input[type=range]::-moz-range-thumb {
+      border: none;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background: $color-green;
+  }
+
+  /*hide the outline behind the border*/
+  input[type=range]:-moz-focusring{
+      outline: 1px solid white;
+      outline-offset: -1px;
+  }
+
+  input[type=range]::-ms-track {
+      width: 300px;
+      height: 5px;
+
+      /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+      background: transparent;
+
+      /*leave room for the larger thumb to overflow with a transparent border */
+      border-color: transparent;
+      border-width: 6px 0;
+
+      /*remove default tick marks*/
+      color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+      background: #777;
+      border-radius: 10px;
+  }
+  input[type=range]::-ms-fill-upper {
+      background: #ddd;
+      border-radius: 10px;
+  }
+  input[type=range]::-ms-thumb {
+      border: none;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background: $color-green;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+      background: #888;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+      background: #ccc;
+  }
+
+  .input-slider {
+      .indice{
+          margin: auto;
+          width: 94%;
+          height: 1.5rem;
+          display: block;
+          margin-top: .8rem;
+          li {
+              display: block;
+              height: 1.5rem;
+              float: left;
+              color: $color-gray1;
+              text-align: center;
+              font-size: .7rem;
+          }
+
+          input[type="range"]{
+              margin: auto;
+              width: 90%;
+          }
+      }
+      .label{
+          margin: auto;
+          width: 90%;
+          height: 1.5rem;
+          display: block;
+          margin-top: .8rem;
+          li {
+              display: block;
+              width: 33%;
+              height: 1.5rem;
+              float: left;
+              color: $color-gray1;
+              text-align: center;
+              font-size: .7rem;
+              &:first-child{
+                  text-align: left;
+              }
+              &:last-child{
+                  text-align: right;
+              }
+          }
+      }
+  }
+
+
+
+//--------------------------------------------------------------------------
+//                                  INPTU[TEXT]
+//                                  INPTU[DATE]
+//                                  INPTU[PASSWORD]
+//-------------------------------------------------------------------------
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"] {
+        background-color: transparent;
+        border: none;
+        box-sizing: border-box;
+        padding: .9rem 0 .9rem .9rem ;
+        width: 100%;
+        outline: none;
+        color: $color-gray2;
+        font-family: "Raleway-Regular", Arial;
+        font-size: .9rem;
+        font-weight: bold;
+        border-bottom:solid 1px $color-gray1;
+        outline: 0;
+        &:last-child {
+            border-bottom:none;
+        }
+
+        &.ng-error,
+        &.ng-invalid-pattern,
+        &.ng-invalid-minlength,
+        &.ng-invalid-maxlength{
+            color: $color-red;
+            border-bottom-color: $color-red;
+        }
+    }
+
+    input::-webkit-input-placeholder {
+        color: $color-gray1;
+    }
+
+    input.ng-error::-webkit-input-placeholder {
+        color: $color-red;
+    }
+
+    input:-moz-placeholder { /* Firefox 18- */
+        color: $color-gray1;
+    }
+
+    input.ng-error:-moz-placeholder { /* Firefox 18- */
+        color: $color-red;
+    }
+
+    input::-moz-placeholder {  /* Firefox 19+ */
+        color: $color-gray1;
+    }
+
+    input.ng-error::-moz-placeholder {  /* Firefox 19+ */
+        color: $color-red;
+    }
+
+    input:-ms-input-placeholder {
+        color: $color-gray1;
+    }
+
+    input.ng-error:-ms-input-placeholder {
+        color: $color-red;
+    }
+
+
+
+
+
+//--------------------------------------------------------------------------
+//                                  SELECT
+//--------------------------------------------------------------------------
+
+  select {
+    background-color: #FFF;
+    border: none;
+    border-bottom:solid 1px $color-gray1;
+    box-sizing: border-box;
+    padding: .7rem 0 .7rem .9rem ;
+    margin: .1rem 0 ;
+    width: 100%;
+    outline: none;
+    color: $color-gray1;
+    font-family: "Raleway-Regular", Arial;
+    font-size: .9rem;
+    font-weight: bold;
+    -webkit-appearance: none;
+
+    &.ng-error {
+        color: $color-red;
+        border-bottom:solid 1px $color-red;
+    }
+
+    &.selected {
+        color: $color-gray2;
+    }
+
+    option{
+         background-color: $color-blue;
+         border: none;
+         color: $color-white;
+         margin: .3rem;
+         display: block;
+         font-size: 1rem;
+         font-weight: bold;
+    }
+
+    option:checked{
+        color: $color-gray2;
+    }
+
+  }
+
+//--------------------------------------------------------------------------
+//                             SELECT LIST
+//--------------------------------------------------------------------------
+
+
+  .select-list{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: solid 1px $color-gray1;
+    padding:0;
+    padding-left: 5%;
+    box-sizing: border-box;
+    border-radius: .3rem;
+    position: relative;
+    background-image: url(../images/bar.png);
+    background-position:left center;
+    background-repeat:repeat-x;
+    background-size: auto 32%;
+    position: relative;
+
+    .load-selectlist {
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index: 10;
+        background-color: $color-white;
+        background-image: url(../images/loading.gif);
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size: auto 60%;
+        border-radius: .3rem;
+    }
+
+
+    .container-1{
+      position: relative;
+      display: block;
+      width: 90%;
+      height: 225px;
+      float: left;
+      margin: 0;
+      overflow:hidden;
+    }
+
+    .container-2{
+      position: relative;
+      display: block;
+      width: 45%;
+      height: 225px;
+      float: left;
+      margin: 0 ;
+      overflow:hidden;
+    }
+
+    .container-3{
+      position: relative;
+      display: block;
+      width: 30%;
+      height: 225px;
+      float: left;
+      margin: 0 ;
+      overflow:hidden;
+    }
+
+    .container-4{
+      position: relative;
+      display: block;
+      width: 22.5%;
+      height: 225px;
+      float: left;
+      margin: 0 ;
+      overflow:hidden;
+    }
+
+    .border-container{
+        border-right: 1px solid $color-white;
+    }
+
+    .border-container:last-child{
+        border-right: none;
+    }
+
+    .group-list {
+      height: auto;
+      display: block;
+      float: left;
+      width: 100%;
+      .option {
+        width: 100%;
+        height: 45px;
+        display: block;
+        float: left;
+        clear: both;
+        span {
+          width: 100%;
+          color: $color-gray1;
+          font-size: 1.3rem;
+          display: block;
+          margin-top: 13px;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+
+  //--------------------------------------------------------------------------
+  //                                  RADIO
+  //-------------------------------------------------------------------------
+
+
+  label.radio-list{
+    width: 100%;
+    display: block;
+    font-family: "Raleway-Regular", Arial;
+    font-size: .9rem;
+    text-align: left;
+    color: $color-gray2;
+    float: left;
+    line-height: 1.4rem;
+    border-bottom: solid 1px $color-gray1;
+    &:last-child{
+        border-bottom: none;
+    }
+    span{
+        float: left;
+        display: block;
+        color: $color-gray2;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 3rem;
+        padding-right: .7rem;
+        font-size: .9rem;
+        line-height: 1.6rem;
+        margin-top: .4rem;
+        margin-bottom: .6rem;
+        font-family: "OpenSans", Arial;
+    }
+
+    input[type="radio"]{
+        position: absolute;
+        margin: .5rem .8rem;
+        height:0;
+        width: 0;
+        outline: 0;
+        border-radius: .7rem;
+        &:before {
+          content: '';
+          height:1.4rem;
+          width: 1.45rem;
+          border-radius: .7rem;
+          outline: 0;
+          display: block;
+          background: $color-gray1;
+          box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    input[type="radio"]:checked{
+        position: absolute;
+        margin: .5rem .8rem;
+        height:0;
+        width: 0;
+        outline: 0;
+        border: 4px solid #FFF;
+        border-radius: .7rem;
+
+        &:before {
+          content: '';
+          height:1.4rem;
+          width: 1.45rem;
+          border-radius: .7rem;
+          outline: 0;
+          display: block;
+          background-color: $color-yellow;
+          background-image: url(../images/sprite.png);
+          background-position:-35px -440px;
+          background-repeat: no-repeat;
+          box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+
+
+
+
+    //--------------------------------------------------------------------------
+    //                                  CHECK
+    //-------------------------------------------------------------------------
+
+
+    label.check-list{
+      width: 100%;
+      display: block;
+      font-family: "Raleway-Regular", Arial;
+      font-size: .9rem;
+      text-align: left;
+      color: $color-gray2;
+      float: left;
+      line-height: 1.4rem;
+      border-bottom: solid 1px $color-gray1;
+      &:last-child{
+          border-bottom: none;
+      }
+      span{
+          float: left;
+          display: block;
+          color: $color-gray2;
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: 3rem;
+          padding-right: .7rem;
+          font-size: .9rem;
+          line-height: 1.6rem;
+          margin-top: .4rem;
+          margin-bottom: .6rem;
+          font-family: "OpenSans", Arial;
+      }
+
+      input[type="checkbox"]{
+          position: absolute;
+          margin: .5rem .8rem;
+          height:0;
+          width: 0;
+          outline: none;
+          &:before {
+            content: '';
+            height:1.4rem;
+            width: 1.45rem;
+            outline: none;
+            display: block;
+            background: $color-gray1;
+            box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
+          }
+      }
+
+      input[type="checkbox"]:checked{
+          position: absolute;
+          margin: .5rem .8rem;
+          height:0;
+          width:0;
+          outline: none;
+          border: 4px solid #FFF;
+          &:before {
+            content: '';
+            height:1.4rem;
+            width: 1.45rem;
+            outline: none;
+            display: block;
+            background-color: $color-yellow;
+            background-image: url(../images/sprite.png);
+            background-position:-35px -440px;
+            background-repeat: no-repeat;
+            box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------
+//                                  ACEITE
+//-------------------------------------------------------------------------
+
+.aceite{
+    label {
+      font-family: "Raleway-Regular", Arial;
+      font-size: .9rem;
+      text-align: left;
+      color: $color-gray2;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      float: left;
+      margin-left: .9rem;
+      line-height: 1.4rem;
+      span{
+          color: $color-blue;
+          clear: none;
+          width: auto;
+      }
+    }
+    input[type="checkbox"]{
+        float: left;
+        height:.5rem;
+        width: .5rem;
+        border-radius: 1rem;
+        border: solid 0px #FFF;
+        background-color: #FFF;
+        outline: none;
+        margin-top: 1.4rem;
+        margin-left: 1rem;
+        &:before {
+          content: '';
+          height:1.4rem;
+          width: 1.45rem;
+          margin-top: -.4rem;
+          margin-left: -.3rem;
+          outline: none;
+          border-radius: 1rem;
+          display: block;
+          background: $color-gray1;
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    input[type="checkbox"].ng-error{
+        &:before {
+          background: $color-red;
+        }
+    }
+
+    input[type="checkbox"]:checked{
+        float: left;
+        height:.5rem;
+        width: .5rem;
+        border-radius: 1rem;
+        border: solid 0px #FFF;
+        background-color: #FFF;
+        outline: none;
+        margin-top: 1.4rem;
+        margin-left: 1rem;
+        &:before {
+          content: '';
+          height:1.4rem;
+          width: 1.45rem;
+          margin-top: -.4rem;
+          margin-left: -.3rem;
+          outline: none;
+          border-radius: 1rem;
+          display: block;
+          background: $color-yellow;
+          background-image: url(../images/sprite.png);
+          background-position:-35px -440px;
+          background-repeat: no-repeat;
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+
+}

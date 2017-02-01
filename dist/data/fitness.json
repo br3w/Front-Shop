@@ -1,0 +1,131 @@
+{
+    "modulo":{
+        "id":"fitness",
+        "next":"smoking",
+        "title":"Atividade Física",
+        "image":"healthfitness.jpg",
+        "description":"A prática de atividades físicas é muito importante para a saúde do corpo e da mente. Vamos avaliar um pouco como andam seus exercícios para ver se você está praticando o suficiente ou se precisa praticar um pouquinho mais!",
+        "helper":[
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "helperload":"",
+        "questions":[
+            {
+                "id":"exercise",
+                "title":"Você pratica atividades físicas?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"sim",
+                        "value":true,
+                        "next":"frequency_week"
+                    },
+                    {
+                        "title":"Não",
+                        "value":false,
+                        "next":"close"
+                    }
+                ],
+
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload": true
+            },
+            {
+                "id":"frequency_week",
+                "title":"Quantas vezes por semana você pratica atividade física?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"check",
+                "options":[
+                    {
+                        "title":"1 Vez Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                        "value":"one",
+                        "next":"average_time_minutes"
+                    },
+                    {
+                        "title":"2 Vezes",
+                        "value":"two",
+                        "next":"average_time_minutes"
+                    },
+                    {
+                        "title":"3 ou mais",
+                        "value":"thee_plus",
+                        "next":"average_time_minutes"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"average_time_minutes",
+                "title":"Em média, quantos minutos dura sua atividade física?",
+                "description":"",
+                "image":"",
+                "type":"range",
+                "input":"selectlist",
+                "next":"intensity",
+                "options":[
+                    {
+                        "range": ["0","5","10","15","20","30","35","40"],
+                        "unid": "_MIN",
+                        "labels": {
+                            "plural":"minutos",
+                            "singular":"minuto"
+                        }
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"intensity",
+                "title":"Em uma escala de 0 a 10, como você qualifica, em média, o esforço da sua atividade física?",
+                "description":"Podemos entender que a atividade física fraca é aquela que, quando você termina, não está nem suando. A moderada é a que você está suando mas aguentaria mais um pouco. E a intensa você termina extenuado, não aguentando mais.",
+                "image":"",
+                "type":"range",
+                "input":"slider",
+                "next":"close",
+                "range": ["1","2","3","4","5","6","7","8","9","10"],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            }
+        ]
+    }
+}

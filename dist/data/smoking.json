@@ -1,0 +1,372 @@
+{
+    "modulo":{
+        "id":"smoking",
+        "next":"drinking",
+        "title":"Cigarro",
+        "image":"healthsmoking.jpg",
+        "description":"A prática de atividades físicas é muito importante para a saúde do corpo e da mente. Vamos avaliar um pouco como andam seus exercícios para ver se você está praticando o suficiente ou se precisa praticar um pouquinho mais!",
+        "helper":[
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "helperload":"",
+
+        "questions":[
+            {
+                "id":"smoker",
+                "title":"Você fuma?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"sim",
+                        "value": true,
+                        "next":"smoker_longevity"
+                    },
+                    {
+                        "title":"Não",
+                        "value": false,
+                        "next":"close"
+                    },
+                    {
+                        "title":"Sou ex fumante",
+                        "value":"EX",
+                        "next":"ex_longevity"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_longevity",
+                "title":"Há quantos anos você fuma?",
+                "description":"",
+                "image":"",
+                "type":"range",
+                "input":"selectlist",
+                "next":"smoker_packs_per_day",
+                "options":[
+
+                    {
+                        "range":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,60],
+                        "labels": {
+                            "plural":"anos",
+                            "singular":"ano"
+                        }
+                    },
+                    {
+                        "range":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+                        "labels": {
+                            "plural":"meses",
+                            "singular":"mês"
+                        }
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_packs_per_day",
+                "title":"Quantos cigarros você fuma em média por dia?",
+                "description":"",
+                "image":"",
+                "type":"range",
+                "input":"selectlist",
+                "next":"smoker_stop",
+                "options":[
+                    {
+                        "range":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,60],
+                        "unid": "_cigarro",
+                        "labels": {
+                            "plural":"cigarros",
+                            "singular":"cigarro"
+                        }
+                    }
+                ],
+                "labels": {
+                    "plural":"cigarros",
+                    "singular":"cigarro"
+                },
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_stop",
+                "title":"Você tem vontade de parar de fumar?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"sim",
+                        "value": true,
+                        "next":"smoker_cigarrete_after_wake"
+                    },
+                    {
+                        "title":"Não",
+                        "value": false,
+                        "next":"close"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_cigarrete_after_wake",
+                "title":"Quanto tempo após acordar você fuma seu primeiro cigarro?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"Nos primeiros 5 minutos",
+                        "value":"5_min",
+                        "next":"smoker_public_places"
+                    },
+                    {
+                        "title":"de 6 a 30 minutos",
+                        "value":"6_30_min",
+                        "next":"smoker_public_places"
+                    },
+                    {
+                        "title":"de 31 a 60 minutos",
+                        "value":"31_60_min",
+                        "next":"smoker_public_places"
+                    },
+                    {
+                        "title":"mais de 60 minutos",
+                        "value":"60_plus_min",
+                        "next":"smoker_public_places"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_public_places",
+                "title":"Você acha difícil não fumar em lugares proibidos?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"sim",
+                        "value": true,
+                        "next":"smoker_more_satisfying"
+                    },
+                    {
+                        "title":"Não",
+                        "value": false,
+                        "next":"smoker_more_satisfying"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_more_satisfying",
+                "title":"Qual cigarro do dia que traz mais satisfação?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"o 1º da manhã",
+                        "value":"first",
+                        "next":"smoker_packs_per_day"
+                    },
+                    {
+                        "title":"os outros",
+                        "value":"others",
+                        "next":"smoker_packs_per_day"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_packs_per_day",
+                "title":"Quantos cigarros você fuma por dia?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"menos de 10",
+                        "value":"10_less",
+                        "next":"smoker_morning"
+                    },
+                    {
+                        "title":"11 à 20",
+                        "value":"11_20",
+                        "next":"smoker_morning"
+                    },
+                    {
+                        "title":"21 à 30",
+                        "value":"21_30",
+                        "next":"smoker_morning"
+                    },
+                    {
+                        "title":"mais de 31",
+                        "value":"31_plus",
+                        "next":"smoker_morning"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_morning",
+                "title":"Você fuma mais frequentemente pela manhã?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"Sim",
+                        "value": true,
+                        "next":"smoker_sick"
+                    },
+                    {
+                        "title":"Não",
+                        "value": false,
+                        "next":"smoker_sick"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"smoker_sick",
+                "title":"Você fuma mesmo doente, quando precisa ficar acamado a maior parte do tempo?*",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"Sim",
+                        "value": true,
+                        "next":"close"
+                    },
+                    {
+                        "title":"Não",
+                        "value": false,
+                        "next":"close"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"ex_longevity_year",
+                "title":"Há quanto tempo você parou de fumar?*",
+                "description":"",
+                "image":"",
+                "type":"range",
+                "input":"selectlist",
+                "next":"close",
+                "options":[
+                    {
+                        "range":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+                        "labels": {
+                            "plural":"anos",
+                            "singular":"ano"
+                        }
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            }
+        ]
+    }
+}

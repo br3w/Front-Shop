@@ -1,0 +1,12 @@
+{
+    "name": "angular-front-shop",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Front-end ecommerce angular",
+    "repository": "https://github.com/br3w/Front-Shop",
+    "dependencies": {
+        "jquery": "^3.1.1",
+        "jquery.pep": "^0.6.8",
+        "ngMask": "angular-mask#^3.1.1"
+    }
+}

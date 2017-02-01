@@ -1,0 +1,17 @@
+// CSS features
+@import 'fontface';
+@import 'vars';
+@import 'reset';
+@import 'mixin';
+@import 'animate';
+@import 'inputs';
+
+// CSS Pages
+@import 'pages/home';
+
+//CSS Partials
+@import 'partials/header';
+@import 'partials/footer';
+
+//Common all
+@import 'common';

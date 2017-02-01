@@ -1,0 +1,153 @@
+{
+    "modulo":{
+        "id":"drinking",
+        "next":"dash",
+        "title":"Álcool",
+        "image":"healthdrinking.jpg",
+        "description":"A prática de atividades físicas é muito importante para a saúde do corpo e da mente. Vamos avaliar um pouco como andam seus exercícios para ver se você está praticando o suficiente ou se precisa praticar um pouquinho mais!",
+        "helper":[
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "helperload":"",
+
+        "questions":[
+            {
+                "id":"frequency_year",
+                "title":"Com que frequência você consumiu bebida alcoólica no último ano?",
+                "description":"",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"Nenhuma vez",
+                        "value":"none",
+                        "next":"close"
+                    },
+                    {
+                        "title":"Mensalmente ou menos",
+                        "value":"monthly",
+                        "next":"serving_per_day"
+                    },
+                    {
+                        "title":"Duas a quatro vezes por mês",
+                        "value":"2_4_monthly",
+                        "next":"serving_per_day"
+                    },
+                    {
+                        "title":"Duas a três vezes por semana",
+                        "value":"2_4_weekly",
+                        "next":"serving_per_day"
+                    },
+                    {
+                        "title":"Quatro ou mais vezes por semana",
+                        "value":"4_plus_weekly",
+                        "next":"serving_per_day"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"serving_per_day",
+                "title":"Quantos drinks você tomou em um dia normal em que você estava bebendo no último ano?",
+                "description":"Lembrando que um drink é uma dose padrão, uma taça de vinho, uma latinha de cerveja e um copo de whisky como mostra a imagem abaixo.",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"1 ou 2",
+                        "value":"one_two",
+                        "next":"frequency_six_drinks_year"
+                    },
+                    {
+                        "title":"2 ou 4",
+                        "value":"three_four",
+                        "next":"frequency_six_drinks_year"
+                    },
+                    {
+                        "title":"5 ou 6",
+                        "value":"five_six",
+                        "next":"frequency_six_drinks_year"
+                    },
+                    {
+                        "title":"7 ou 8",
+                        "value":"seven_nine",
+                        "next":"frequency_six_drinks_year"
+                    },
+                    {
+                        "title":"10 ou mais",
+                        "value":"ten_plus",
+                        "next":"frequency_six_drinks_year"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            },
+            {
+                "id":"frequency_six_drinks_year",
+                "title":"Com que frequência você tomou 6 ou mais drinks na mesma ocasião no último ano?",
+                "description":"Lembrando que um drink é uma dose padrão, uma taça de vinho, uma latinha de cerveja ou um copo de whisky, por exemplo.",
+                "image":"",
+                "type":"list",
+                "input":"radio",
+                "options":[
+                    {
+                        "title":"Nenhuma vez",
+                        "value":"none",
+                        "next":"close"
+                    },
+                    {
+                        "title":"Menos de uma vez por mês",
+                        "value":"monthly_less",
+                        "next":"close"
+                    },
+                    {
+                        "title":"Mensalmente",
+                        "value":"monthly",
+                        "next":"close"
+                    },
+                    {
+                        "title":"Semanalmente",
+                        "value":"weekly",
+                        "next":"close"
+                    },
+                    {
+                        "title":"Diariamente ou quase isso",
+                        "value":"daily",
+                        "next":"close"
+                    }
+                ],
+                "helper":[
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "text":"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ],
+                "helperload":""
+            }
+        ]
+    }
+}

@@ -1,0 +1,175 @@
+html         { overflow-y:hidden; }
+.page        {
+	bottom:0;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%;
+	background-color: #FFF;
+}
+
+.page.ng-leave 	{ z-index:9999; }
+.page.ng-enter 	{
+	z-index:8888;
+	-webkit-animation:fadeShow 0.5s both ease-in;
+	-moz-animation:fadeShow 0.5s both ease-in;
+	animation:fadeShow 0.5s both ease-in;
+}
+
+.modal-helper.ng-enter,
+.load-selectlist.ng-enter{
+	-webkit-animation:fadeShow 0.5s both ease-in;
+	-moz-animation:fadeShow 0.5s both ease-in;
+	animation:fadeShow 0.5s both ease-in;
+}
+
+.modal-helper.ng-leave,
+.load-selectlist.ng-leave {
+	-webkit-animation:fadeHide 0.5s both ease-in;
+	-moz-animation:fadeHide 0.5s both ease-in;
+	animation:fadeHide 0.5s both ease-in;
+}
+
+
+.slide-left.ng-leave {
+	-webkit-animation:slideOutLeft 0.5s both ease-in;
+	-moz-animation:slideOutLeft 0.5s both ease-in;
+	animation:slideOutLeft 0.5s both ease-in;
+}
+.slide-left.ng-enter {
+		-webkit-animation:scaleUp 0.5s both ease-in;
+		-moz-animation:scaleUp 0.5s both ease-in;
+		animation:scaleUp 0.5s both ease-in;
+}
+
+.slide-right.ng-leave {
+	-webkit-animation:slideOutRight 0.5s both ease-in;
+	-moz-animation:slideOutRight 0.5s both ease-in;
+	animation:slideOutRight 0.5s both ease-in;
+}
+.slide-right.ng-enter {
+	-webkit-animation:scaleUp 0.5s both ease-in;
+	-moz-animation:scaleUp 0.5s both ease-in;
+	animation:scaleUp 0.5s both ease-in;
+}
+
+.slide-up.ng-leave {
+	-webkit-animation:slideUp 0.5s both ease-in;
+	-moz-animation:slideUp 0.5s both ease-in;
+	animation:slideUp 0.5s both ease-in;
+}
+.slide-up.ng-enter {
+		-webkit-animation:scaleUp 0.5s both ease-in;
+		-moz-animation:scaleUp 0.5s both ease-in;
+		animation:scaleUp 0.5s both ease-in;
+}
+
+.slide-down.ng-leave         {
+	-webkit-animation:slideDown 0.5s both ease-in;
+	-moz-animation:slideDown 0.5s both ease-in;
+	animation:slideDown 0.5s both ease-in;
+}
+.slide-down.ng-enter 		{
+		-webkit-animation:scaleUp 0.5s both ease-in;
+		-moz-animation:scaleUp 0.5s both ease-in;
+		animation:scaleUp 0.5s both ease-in;
+}
+
+
+
+/* Show Elem */
+@-webkit-keyframes fadeShow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeShow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeShow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeShow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* Show Elem */
+@-webkit-keyframes fadeHide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fadeHide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fadeHide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeHide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+/* scale up */
+@keyframes scaleUp {
+	from 		{ opacity: 0.3; transform: scale(0.8); }
+}
+@-moz-keyframes scaleUp {
+	from 		{ opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+	from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+
+
+/* slide in from the bottom */
+@keyframes slideOutRight {
+	to 		{ transform: translateX(100%); }
+}
+@-moz-keyframes slideOutRight {
+	to 		{ -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes slideOutRight {
+	to 		{ -webkit-transform: translateX(100%); }
+}
+
+
+/* slide in from the Up */
+@keyframes slideUp {
+	to 		{ transform: translateY(100%); }
+}
+@-moz-keyframes slideUp {
+	to 		{ -moz-transform: translateY(100%); }
+}
+@-webkit-keyframes slideUp {
+	to 		{ -webkit-transform: translateY(100%); }
+}
+
+
+/* slide in from the Down */
+@keyframes slideDown {
+	to 		{ transform: translateY(-100%); }
+}
+@-moz-keyframes slideDown {
+	to 		{ -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes slideDown {
+	to 		{ -webkit-transform: translateY(-100%); }
+}
