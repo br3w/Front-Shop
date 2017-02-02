@@ -1,0 +1,38 @@
+#header{
+    width: 100%;
+    background-color: $white;
+    opacity: 0.8;
+
+    .menu {
+        width: 100%;
+        opacity: 1;
+        display: block;
+        height: 3rem;
+        background-color: $white;
+        border-bottom: 1px solid $gray2;
+        .center {
+            ul{
+                width: 100%;
+                li {
+                    float: left;
+                }
+            }
+        }
+    }
+    .sub-menu {
+        width: 100%;
+        opacity: 1;
+        display: block;
+        height: 2rem;
+        background-color: $gray1;
+        border-bottom: 1px solid $gray2;
+        .center {
+            ul{
+                width: 100%;
+                li {
+                    float: left;
+                }
+            }
+        }
+    }
+}

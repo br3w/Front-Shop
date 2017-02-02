@@ -10,7 +10,7 @@
     box-sizing: border-box;
     float: left;
     width: 100%;
-    border: solid 1px $color-gray1;
+    border: solid 1px $gray1;
     padding:.3rem 0;
     border-radius: .3rem;
   }
@@ -46,7 +46,7 @@
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 50%;
-      background: $color-green;
+      background: $green;
       margin-top: -.55rem;
   }
   input[type=range]:focus {
@@ -68,7 +68,7 @@
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 50%;
-      background: $color-green;
+      background: $green;
   }
 
   /*hide the outline behind the border*/
@@ -104,7 +104,7 @@
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 50%;
-      background: $color-green;
+      background: $green;
   }
   input[type=range]:focus::-ms-fill-lower {
       background: #888;
@@ -124,7 +124,7 @@
               display: block;
               height: 1.5rem;
               float: left;
-              color: $color-gray1;
+              color: $gray1;
               text-align: center;
               font-size: .7rem;
           }
@@ -145,7 +145,7 @@
               width: 33%;
               height: 1.5rem;
               float: left;
-              color: $color-gray1;
+              color: $gray1;
               text-align: center;
               font-size: .7rem;
               &:first-child{
@@ -176,11 +176,11 @@
         padding: .9rem 0 .9rem .9rem ;
         width: 100%;
         outline: none;
-        color: $color-gray2;
+        color: $gray2;
         font-family: "Raleway-Regular", Arial;
         font-size: .9rem;
         font-weight: bold;
-        border-bottom:solid 1px $color-gray1;
+        border-bottom:solid 1px $gray1;
         outline: 0;
         &:last-child {
             border-bottom:none;
@@ -190,41 +190,41 @@
         &.ng-invalid-pattern,
         &.ng-invalid-minlength,
         &.ng-invalid-maxlength{
-            color: $color-red;
-            border-bottom-color: $color-red;
+            color: $red;
+            border-bottom-color: $red;
         }
     }
 
     input::-webkit-input-placeholder {
-        color: $color-gray1;
+        color: $gray1;
     }
 
     input.ng-error::-webkit-input-placeholder {
-        color: $color-red;
+        color: $red;
     }
 
     input:-moz-placeholder { /* Firefox 18- */
-        color: $color-gray1;
+        color: $gray1;
     }
 
     input.ng-error:-moz-placeholder { /* Firefox 18- */
-        color: $color-red;
+        color: $red;
     }
 
     input::-moz-placeholder {  /* Firefox 19+ */
-        color: $color-gray1;
+        color: $gray1;
     }
 
     input.ng-error::-moz-placeholder {  /* Firefox 19+ */
-        color: $color-red;
+        color: $red;
     }
 
     input:-ms-input-placeholder {
-        color: $color-gray1;
+        color: $gray1;
     }
 
     input.ng-error:-ms-input-placeholder {
-        color: $color-red;
+        color: $red;
     }
 
 
@@ -238,31 +238,31 @@
   select {
     background-color: #FFF;
     border: none;
-    border-bottom:solid 1px $color-gray1;
+    border-bottom:solid 1px $gray1;
     box-sizing: border-box;
     padding: .7rem 0 .7rem .9rem ;
     margin: .1rem 0 ;
     width: 100%;
     outline: none;
-    color: $color-gray1;
+    color: $gray1;
     font-family: "Raleway-Regular", Arial;
     font-size: .9rem;
     font-weight: bold;
     -webkit-appearance: none;
 
     &.ng-error {
-        color: $color-red;
-        border-bottom:solid 1px $color-red;
+        color: $red;
+        border-bottom:solid 1px $red;
     }
 
     &.selected {
-        color: $color-gray2;
+        color: $gray2;
     }
 
     option{
-         background-color: $color-blue;
+         background-color: $blue;
          border: none;
-         color: $color-white;
+         color: $white;
          margin: .3rem;
          display: block;
          font-size: 1rem;
@@ -270,7 +270,7 @@
     }
 
     option:checked{
-        color: $color-gray2;
+        color: $gray2;
     }
 
   }
@@ -284,7 +284,7 @@
     box-sizing: border-box;
     float: left;
     width: 100%;
-    border: solid 1px $color-gray1;
+    border: solid 1px $gray1;
     padding:0;
     padding-left: 5%;
     box-sizing: border-box;
@@ -303,7 +303,7 @@
         bottom:0;
         right:0;
         z-index: 10;
-        background-color: $color-white;
+        background-color: $white;
         background-image: url(../images/loading.gif);
         background-position:center center;
         background-repeat:no-repeat;
@@ -353,7 +353,7 @@
     }
 
     .border-container{
-        border-right: 1px solid $color-white;
+        border-right: 1px solid $white;
     }
 
     .border-container:last-child{
@@ -373,7 +373,7 @@
         clear: both;
         span {
           width: 100%;
-          color: $color-gray1;
+          color: $gray1;
           font-size: 1.3rem;
           display: block;
           margin-top: 13px;
@@ -396,17 +396,17 @@
     font-family: "Raleway-Regular", Arial;
     font-size: .9rem;
     text-align: left;
-    color: $color-gray2;
+    color: $gray2;
     float: left;
     line-height: 1.4rem;
-    border-bottom: solid 1px $color-gray1;
+    border-bottom: solid 1px $gray1;
     &:last-child{
         border-bottom: none;
     }
     span{
         float: left;
         display: block;
-        color: $color-gray2;
+        color: $gray2;
         width: 100%;
         box-sizing: border-box;
         padding-left: 3rem;
@@ -432,7 +432,7 @@
           border-radius: .7rem;
           outline: 0;
           display: block;
-          background: $color-gray1;
+          background: $gray1;
           box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
         }
     }
@@ -453,7 +453,7 @@
           border-radius: .7rem;
           outline: 0;
           display: block;
-          background-color: $color-yellow;
+          background-color: $yellow;
           background-image: url(../images/sprite.png);
           background-position:-35px -440px;
           background-repeat: no-repeat;
@@ -477,17 +477,17 @@
       font-family: "Raleway-Regular", Arial;
       font-size: .9rem;
       text-align: left;
-      color: $color-gray2;
+      color: $gray2;
       float: left;
       line-height: 1.4rem;
-      border-bottom: solid 1px $color-gray1;
+      border-bottom: solid 1px $gray1;
       &:last-child{
           border-bottom: none;
       }
       span{
           float: left;
           display: block;
-          color: $color-gray2;
+          color: $gray2;
           width: 100%;
           box-sizing: border-box;
           padding-left: 3rem;
@@ -511,7 +511,7 @@
             width: 1.45rem;
             outline: none;
             display: block;
-            background: $color-gray1;
+            background: $gray1;
             box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.2);
           }
       }
@@ -529,7 +529,7 @@
             width: 1.45rem;
             outline: none;
             display: block;
-            background-color: $color-yellow;
+            background-color: $yellow;
             background-image: url(../images/sprite.png);
             background-position:-35px -440px;
             background-repeat: no-repeat;
@@ -553,14 +553,14 @@
       font-family: "Raleway-Regular", Arial;
       font-size: .9rem;
       text-align: left;
-      color: $color-gray2;
+      color: $gray2;
       margin-top: 1rem;
       margin-bottom: .5rem;
       float: left;
       margin-left: .9rem;
       line-height: 1.4rem;
       span{
-          color: $color-blue;
+          color: $blue;
           clear: none;
           width: auto;
       }
@@ -584,14 +584,14 @@
           outline: none;
           border-radius: 1rem;
           display: block;
-          background: $color-gray1;
+          background: $gray1;
           box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
         }
     }
 
     input[type="checkbox"].ng-error{
         &:before {
-          background: $color-red;
+          background: $red;
         }
     }
 
@@ -614,7 +614,7 @@
           outline: none;
           border-radius: 1rem;
           display: block;
-          background: $color-yellow;
+          background: $yellow;
           background-image: url(../images/sprite.png);
           background-position:-35px -440px;
           background-repeat: no-repeat;

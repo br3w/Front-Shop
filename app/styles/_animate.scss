@@ -1,12 +1,4 @@
 html         { overflow-y:hidden; }
-.page        {
-	bottom:0;
-	position:absolute;
-	text-align:center;
-	top:0;
-	width:100%;
-	background-color: #FFF;
-}
 
 .page.ng-leave 	{ z-index:9999; }
 .page.ng-enter 	{
