@@ -65,7 +65,7 @@ gulp.task('styles', function() {
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/styles'))
-    .pipe(notify({ message: 'Styles task complete' }));
+    //.pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Vendor
@@ -118,7 +118,7 @@ gulp.task('scripts', function() {
             .pipe(rename({ suffix: '.min' }))
             //.pipe(uglify())
             .pipe(gulp.dest('dist/scripts'))
-            .pipe(notify({ message: 'Scripts task complete' }))
+            //.pipe(notify({ message: 'Scripts task complete' }))
         );
 });
 
@@ -127,7 +127,7 @@ gulp.task('images', function() {
   return gulp.src('app/images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/images'))
-    .pipe(notify({ message: 'Images task complete' }));
+    //.pipe(notify({ message: 'Images task complete' }));
 });
 
 // Clean

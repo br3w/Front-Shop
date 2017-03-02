@@ -7,7 +7,7 @@ body, html{
 body {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-  background-color: $gray1;
+  background-color: $c-gray-1;
   #content{
     width: 100%;
     height: 100%;
@@ -24,6 +24,5 @@ body {
 .center{
     margin: auto;
     display: block;
-    max-width: 1100px;
     height: auto;
 }

@@ -1,28 +1,47 @@
-
 // Color
-$white: #ffffff;
-$blue: #3dbfce;
-$red: #fb5a5a;
-$green: #81e2ca;
-$green-light: #e5f9f4;
-$yellow: #f7cc67;
-$gray1: #fdfdfd;
-$gray2: #f3f3f3;
-$gray3: #606569;
-$gray4: #575958;
+$c-white:   #FFFFFF;
+$c-black:   #000000;
+$c-yellow:  #e0bc35;
+$c-green:   green;
+$c-blue:    blue;
+$c-red:     red;
 
-// spacing
-$full-space: 40px;
-$half-space: 20px;
+$c-gray-1:  #f9f9f9;
+$c-gray-2:  #efefef;
+$c-gray-3:  #888888;
 
-// font sizing
-$font-size--xs: 10px;
-$font-size--sm: 12px;
-$font-size--md: 16px;
-$font-size--lg: 24px;
-$font-size--xl: 32px;
 
-// Button color
-$button-face: #446de9;
-$button-google: #f03c3d;
-$button-sign: #3dbfce;
+
+// Font size: Variables and Classes
+
+$fs-1    : .6rem;
+$fs-2    : .7rem;
+$fs-3    : .8rem;
+$fs-4    : .9rem;
+$fs-5    : 1rem;
+$fs-6    : 1.1rem;
+$fs-7    : 1.2rem;
+$fs-8    : 1.3rem;
+$fs-9    : 1.4rem;
+$fs-10   : 1.5rem;
+$fs-11   : 1.6rem;
+$fs-12   : 1.7rem;
+$fs-13   : 1.8rem;
+$fs-14   : 1.9rem;
+$fs-15   : 2rem;
+
+.fs-1   { font-size: $fs-1 ;}
+.fs-2   { font-size: $fs-2 ;}
+.fs-3   { font-size: $fs-3 ;}
+.fs-4   { font-size: $fs-4 ;}
+.fs-5   { font-size: $fs-5 ;}
+.fs-6   { font-size: $fs-6 ;}
+.fs-7   { font-size: $fs-7 ;}
+.fs-8   { font-size: $fs-8 ;}
+.fs-9   { font-size: $fs-9 ;}
+.fs-10  { font-size: $fs-10;}
+.fs-11  { font-size: $fs-11;}
+.fs-12  { font-size: $fs-12;}
+.fs-13  { font-size: $fs-13;}
+.fs-14  { font-size: $fs-14;}
+.fs-15  { font-size: $fs-15;}
