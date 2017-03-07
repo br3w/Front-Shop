@@ -22,7 +22,9 @@ body {
 }
 
 .center{
+    max-width: 1366px;
     margin: auto;
     display: block;
     height: auto;
+    position: relative;
 }

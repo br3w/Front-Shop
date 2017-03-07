@@ -4529,6 +4529,50 @@ html {
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
+#home .grid-2-column .column-grid,
+#home .grid-3-column .column-grid,
+#home .grid-4-column .column-grid {
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+  float: left;
+}
+#home .grid-2-column .column-grid .box-grid,
+#home .grid-3-column .column-grid .box-grid,
+#home .grid-4-column .column-grid .box-grid {
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+}
+#home .grid-2-column {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  box-sizing: border-box;
+  background-color: yellow;
+}
+#home .grid-2-column .column-grid {
+  width: 50%;
+  display: block;
+  height: auto;
+  background-color: blue;
+}
+#home .grid-2-column .column-grid .box-grid {
+  width: 50%;
+  height: 8rem;
+  display: block;
+}
+#home .grid-2-column .column-grid .box-grid:nth-child(odd) {
+  background-color: red;
+}
+
+#home .banner-full {
+  height: 40rem;
+  background-image: url(../images/banner-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 #header {
   width: 100%;
   background-color: #FFFFFF;
@@ -4669,7 +4713,9 @@ body #content {
 }
 
 .center {
+  max-width: 1366px;
   margin: auto;
   display: block;
   height: auto;
+  position: relative;
 }
