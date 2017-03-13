@@ -11,6 +11,13 @@
             $scope.verifyMail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
             $scope.verifyPassword = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/;
             $scope.pageClass = 'slide-left';
+
+            $(window).resize(function(){
+                var $height = $('.box-grid').width();
+                $('.box-grid').css({'height':$height+'px'});
+                $('.banner-full').css({'height':$height*3+'px'});
+
+            });
         }
     ]);
 

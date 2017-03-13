@@ -1,12 +1,19 @@
 #home{
 
     .banner-full{
-
-        height: 40rem;
         background-image: url(../images/banner-01.jpg);
-        background-position: center;
-        background-size: cover;
-
     }
 
+    .row{
+        &:nth-child(1){
+            padding: 1.2rem;
+            box-sizing: border-box;
+            background-color: $c-gray-2;
+            border-top: solid 1px #EEE;
+
+        }
+        &:nth-child(2){
+            margin-top: 1.2rem;
+        }
+    }
 }

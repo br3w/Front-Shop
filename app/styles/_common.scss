@@ -7,7 +7,7 @@ body, html{
 body {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-  background-color: $c-gray-1;
+  background-color:#FFF;
   #content{
     width: 100%;
     height: 100%;
@@ -27,4 +27,17 @@ body {
     display: block;
     height: auto;
     position: relative;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: block;
+}
+
+.banner-full{
+    height: 34rem;
+    background-position: center;
+    background-size: cover;
 }
