@@ -1,15 +1,15 @@
 #home{
 
     .banner-full{
-        background-image: url(../images/banner-01.jpg);
+        background-image: url(../images/img-14.jpg);
     }
 
     .row{
         &:nth-child(1){
             padding: 1.2rem;
             box-sizing: border-box;
-            background-color: $c-gray-2;
-            border-top: solid 1px #EEE;
+            background-color: #f6f6f6;
+            // border-top: solid 1px #F9F9F9;
 
         }
         &:nth-child(2){

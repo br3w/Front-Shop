@@ -6,7 +6,7 @@
         display: block;
         .center {
             height: 2rem;
-            padding: 1rem;
+            padding: 1.5rem 0;
             position: relative;
             h1.logo-livingstone {
                 display: block;
@@ -14,8 +14,7 @@
                 width: 11rem;
                 a{
                     text-decoration: none;
-                    margin-top: .3rem;
-                    font-size: 1.6rem;
+                    font-size: 2.1rem;
                     font-weight: 300;
                     float: left;
                     color: $c-gray-3;
@@ -63,7 +62,7 @@
                             a{
                                 font-family: 'Raleway-Light', Arial;
                                 text-decoration: none;
-                                font-size: $fs-3;
+                                font-size: $fs-4;
                                 color: $c-gray-3;
                                 padding: .8rem 1rem .4rem;
                             }

@@ -4530,13 +4530,12 @@ html {
 }
 
 #home .banner-full {
-  background-image: url(../images/banner-01.jpg);
+  background-image: url(../images/img-14.jpg);
 }
 #home .row:nth-child(1) {
   padding: 1.2rem;
   box-sizing: border-box;
-  background-color: #efefef;
-  border-top: solid 1px #EEE;
+  background-color: #f6f6f6;
 }
 #home .row:nth-child(2) {
   margin-top: 1.2rem;
@@ -4552,7 +4551,7 @@ html {
 }
 #header .menu .center {
   height: 2rem;
-  padding: 1rem;
+  padding: 1.5rem 0;
   position: relative;
 }
 #header .menu .center h1.logo-livingstone {
@@ -4562,8 +4561,7 @@ html {
 }
 #header .menu .center h1.logo-livingstone a {
   text-decoration: none;
-  margin-top: .3rem;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 300;
   float: left;
   color: #888888;
@@ -4610,7 +4608,7 @@ html {
 #header .menu .center .icon-header.desktop ul li a {
   font-family: 'Raleway-Light', Arial;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #888888;
   padding: .8rem 1rem .4rem;
 }
@@ -4691,40 +4689,43 @@ html {
   display: block;
   height: auto;
   background-color: #EEE;
+  box-sizing: border-box;
   float: left;
 }
 .grid-2-column .column-grid .box-grid {
-  width: 33.3334%;
+  width: 33.334%;
   height: 12rem;
   display: block;
   float: left;
+  background-position: center;
+  background-size: cover;
 }
 .grid-2-column .column-grid .box-grid:nth-child(1) {
-  background-color: red;
+  background-image: url(../images/img-01.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(2) {
-  background-color: green;
+  background-image: url(../images/img-02.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(3) {
-  background-color: orange;
+  background-image: url(../images/img-03.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(4) {
-  background-color: purple;
+  background-image: url(../images/img-04.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(5) {
-  background-color: blue;
+  background-image: url(../images/img-05.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(6) {
-  background-color: cyan;
+  background-image: url(../images/img-06.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(7) {
-  background-color: pink;
+  background-image: url(../images/img-07.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(8) {
-  background-color: yellow;
+  background-image: url(../images/img-08.jpg);
 }
 .grid-2-column .column-grid .box-grid:nth-child(9) {
-  background-color: magenta;
+  background-image: url(../images/img-09.jpg);
 }
 
 body, html {
