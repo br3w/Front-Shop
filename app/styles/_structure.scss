@@ -1,4 +1,44 @@
 
+.row{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.center{
+    margin: auto;
+    display: block;
+    max-width: 1366px;
+    padding: .65rem;
+}
+
+.box-1-column-left-detail,
+.box-1-column-right-detail,
+.box-2-colmun, .box-3-colmun,
+.box-4-colmun {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.box-2-column{
+    .column-grid{
+        box-sizing: border-box;
+        width: 50%;
+        display: block;
+        padding: .65rem;
+        float: left;
+    }
+}
+
+
+
+
+
+
+
 .grid-2-column,
 .grid-3-column,
 .grid-4-column{
@@ -28,7 +68,7 @@
         display: block;
         height: auto;
         background-color: #EEE;
-        box-sizing: border-box;        
+        box-sizing: border-box;
         float: left;
         .box-grid{
             width: 33.334%;

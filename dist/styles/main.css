@@ -4529,16 +4529,9 @@ html {
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
-#home .banner-full {
-  background-image: url(../images/img-14.jpg);
-}
 #home .row:nth-child(1) {
-  padding: 1.2rem;
   box-sizing: border-box;
   background-color: #f6f6f6;
-}
-#home .row:nth-child(2) {
-  margin-top: 1.2rem;
 }
 
 #header {
@@ -4653,6 +4646,38 @@ html {
 }
 #header .menu .center .icon-header .ball.b-shopp {
   margin: -.35rem 0 0 .78rem;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.center {
+  margin: auto;
+  display: block;
+  max-width: 1366px;
+  padding: .65rem;
+}
+
+.box-1-column-left-detail,
+.box-1-column-right-detail,
+.box-2-colmun, .box-3-colmun,
+.box-4-colmun {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.box-2-column .column-grid {
+  box-sizing: border-box;
+  width: 50%;
+  display: block;
+  padding: .65rem;
+  float: left;
 }
 
 .grid-2-column,
